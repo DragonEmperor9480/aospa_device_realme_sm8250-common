@@ -16,14 +16,6 @@ static const variant_info_t RMX2071_CN_info = {
     .name = "RMX2071",
 };
 
-static const variant_info_t RMX2072_CN_info = {
-    .prjversion_value = "20607",
-
-    .device = "RMX2072CN",
-    .model = "RMX2072",
-    .name = "RMX2072",
-};
-
 static const variant_info_t RMX2075_GLOBAL_info = {
     .prjversion_value = "19705",
 
@@ -34,6 +26,14 @@ static const variant_info_t RMX2075_GLOBAL_info = {
 
 static const variant_info_t RMX2076_IN_info = {
     .prjversion_value = "19706",
+
+    .device = "RMX2076L1",
+    .model = "RMX2076",
+    .name = "RMX2076",
+};
+
+static const variant_info_t RMX3371_IN_info = {
+    .prjversion_value = "19805",
 
     .device = "RE54E4L1",
     .model = "RMX3371",
@@ -74,13 +74,13 @@ static const variant_info_t RMX3370_IN_info = {
 
 static const std::vector<variant_info_t> variants = {
     RMX2071_CN_info,
-    RMX2072_CN_info,
     RMX2075_GLOBAL_info,
     RMX2076_IN_info,
     RMX3370_CN_info,
     RMX3370_CNLZ_info,
     RMX3370_GLOBAL_info,
     RMX3370_IN_info,
+    RMX3371_IN_info,
 };
 
 void vendor_load_properties() {
